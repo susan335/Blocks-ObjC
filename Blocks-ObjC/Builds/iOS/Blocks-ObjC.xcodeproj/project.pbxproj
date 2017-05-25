@@ -14,6 +14,8 @@
 		EFB6C1ED1ED657C50080C6E9 /* BlockFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EFB6C1E11ED657C50080C6E9 /* BlockFinder.cpp */; };
 		EFB6C1EE1ED657C50080C6E9 /* Blocks.mm in Sources */ = {isa = PBXBuildFile; fileRef = EFB6C1E41ED657C50080C6E9 /* Blocks.mm */; };
 		EFB6C1F11ED657C50080C6E9 /* Sample.mm in Sources */ = {isa = PBXBuildFile; fileRef = EFB6C1EC1ED657C50080C6E9 /* Sample.mm */; };
+		EFBE2F061ED6689900517655 /* BlocksGridLED.mm in Sources */ = {isa = PBXBuildFile; fileRef = EFBE2F031ED6689900517655 /* BlocksGridLED.mm */; };
+		EFBE2F071ED6689900517655 /* BlocksTouch.mm in Sources */ = {isa = PBXBuildFile; fileRef = EFBE2F051ED6689900517655 /* BlocksTouch.mm */; };
 		F2DADC4783FFB7B63DD6B4C1 /* include_juce_blocks_basics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB62830B4E75555E46608F5C /* include_juce_blocks_basics.cpp */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,10 @@
 		EFB6C1EA1ED657C50080C6E9 /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
 		EFB6C1EB1ED657C50080C6E9 /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sample.h; sourceTree = "<group>"; };
 		EFB6C1EC1ED657C50080C6E9 /* Sample.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Sample.mm; sourceTree = "<group>"; };
+		EFBE2F021ED6689900517655 /* BlocksGridLED.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksGridLED.h; sourceTree = "<group>"; };
+		EFBE2F031ED6689900517655 /* BlocksGridLED.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BlocksGridLED.mm; sourceTree = "<group>"; };
+		EFBE2F041ED6689900517655 /* BlocksTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksTouch.h; sourceTree = "<group>"; };
+		EFBE2F051ED6689900517655 /* BlocksTouch.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BlocksTouch.mm; sourceTree = "<group>"; };
 		F7FDCD76F252F15D30646A79 /* juce_blocks_basics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_blocks_basics; path = ../../JuceLibraryCode/modules/juce_blocks_basics; sourceTree = SOURCE_ROOT; };
 		FB62830B4E75555E46608F5C /* include_juce_blocks_basics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_blocks_basics.cpp; path = ../../JuceLibraryCode/include_juce_blocks_basics.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -50,6 +56,10 @@
 				EFB6C1E21ED657C50080C6E9 /* BlockFinder.h */,
 				EFB6C1E31ED657C50080C6E9 /* Blocks.h */,
 				EFB6C1E41ED657C50080C6E9 /* Blocks.mm */,
+				EFBE2F021ED6689900517655 /* BlocksGridLED.h */,
+				EFBE2F031ED6689900517655 /* BlocksGridLED.mm */,
+				EFBE2F041ED6689900517655 /* BlocksTouch.h */,
+				EFBE2F051ED6689900517655 /* BlocksTouch.mm */,
 				EFB6C1E91ED657C50080C6E9 /* BlockTouchSurfaceListener.hpp */,
 				EFB6C1EA1ED657C50080C6E9 /* global.h */,
 				EFB6C1EB1ED657C50080C6E9 /* Sample.h */,
@@ -178,11 +188,13 @@
 				91F405909542C6C602523410 /* include_juce_audio_basics.mm in Sources */,
 				EFB6C1F11ED657C50080C6E9 /* Sample.mm in Sources */,
 				6D20C8EFC88E21EBF24C99C2 /* include_juce_audio_devices.mm in Sources */,
+				EFBE2F061ED6689900517655 /* BlocksGridLED.mm in Sources */,
 				F2DADC4783FFB7B63DD6B4C1 /* include_juce_blocks_basics.cpp in Sources */,
 				EFB6C1ED1ED657C50080C6E9 /* BlockFinder.cpp in Sources */,
 				5BA9E230A4AED12570FE7440 /* include_juce_core.mm in Sources */,
 				EFB6C1EE1ED657C50080C6E9 /* Blocks.mm in Sources */,
 				990B21336425BDB672F01A90 /* include_juce_events.mm in Sources */,
+				EFBE2F071ED6689900517655 /* BlocksTouch.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
