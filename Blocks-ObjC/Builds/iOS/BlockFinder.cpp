@@ -35,14 +35,20 @@ void BlockFinder::topologyChanged()
     // We have a new topology, so find out what it isand store it in a local
     // variable.
     BlockTopology currentTopology = pts.getCurrentTopology();
-    Logger::writeToLog ("\nNew BLOCKS topology.");
 
     // The blocks member of a BlockTopology contains an array of blocks. Here we
     // loop over them and print some information.
     Logger::writeToLog (String ("Detected ") + String (currentTopology.blocks.size()) + " blocks:");
     for (auto& block : currentTopology.blocks)
     {
+        if (findedBlock.contains(block)) {
+            continue;
+        }
+        Logger::writeToLog ("\nNew BLOCKS topology.");
+        findedBlock.add(block);
+        
         if (handler) {
+            
             handler(block);
         }
         Logger::writeToLog ("");

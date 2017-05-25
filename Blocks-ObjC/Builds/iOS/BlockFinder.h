@@ -40,4 +40,5 @@ private:
 
     // The PhysicalTopologySource member variable which reports BLOCKS changes.
     juce::PhysicalTopologySource pts;
+    juce::ReferenceCountedArray<juce::Block> findedBlock;
 };
