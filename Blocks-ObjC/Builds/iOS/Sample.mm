@@ -9,12 +9,6 @@
 #import "Sample.h"
 #import "global.h"
 
-//@interface Sample()
-//
-//
-//
-//@end
-
 @implementation Sample
 
 @synthesize delegate = delegate;
