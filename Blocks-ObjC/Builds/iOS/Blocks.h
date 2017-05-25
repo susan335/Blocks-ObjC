@@ -9,22 +9,27 @@
 #import <Foundation/Foundation.h>
 #import "BlockTouchSurfaceListener.hpp"
 #import "global.h"
+#import "BlocksGridLED.h"
 
+@class BlocksTouch;
 @protocol BlockTouchDelegate
-
-//- (void)findBlock:(Blocks*) blocks;
-
+- (void)touchChange:(NSArray<BlocksTouch *>*) touches;
 @end
+
 
 @interface Blocks : NSObject {
 
     juce::Block::Ptr blockPtr;
     juce::ReferenceCountedObjectPtr<BlockTouchSurfaceListener> touchSurfaceListenerPtr;
     juce::TouchList<juce::TouchSurface::Touch> touches;
-    juce::BitmapLEDProgram *ledProgram;
-    
+    BlocksGridLED *gridLed;
 }
 
 - (instancetype)initWithJuceBlockPtr:(juce::Block::Ptr)block;
+- (NSString*)serialNumber;
+- (UInt64)uid;
+- (NSValue *)blockPtr;
+
+@property (assign) id<BlockTouchDelegate> touchDelegate;
 
 @end
