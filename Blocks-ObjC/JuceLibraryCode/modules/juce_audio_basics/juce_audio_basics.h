@@ -50,7 +50,6 @@
 #define JUCE_AUDIO_BASICS_H_INCLUDED
 
 #include <juce_core/juce_core.h>
-#include <juce_graphics/juce_graphics.h>
 
 namespace juce
 {

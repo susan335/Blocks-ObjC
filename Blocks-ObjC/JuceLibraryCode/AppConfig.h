@@ -47,7 +47,6 @@
 #define JUCE_MODULE_AVAILABLE_juce_blocks_basics      1
 #define JUCE_MODULE_AVAILABLE_juce_core               1
 #define JUCE_MODULE_AVAILABLE_juce_events             1
-#define JUCE_MODULE_AVAILABLE_juce_graphics           1
 
 //==============================================================================
 #ifndef    JUCE_STANDALONE_APPLICATION
@@ -135,15 +134,4 @@
 
 #ifndef    JUCE_EXECUTE_APP_SUSPEND_ON_IOS_BACKGROUND_TASK
  //#define JUCE_EXECUTE_APP_SUSPEND_ON_IOS_BACKGROUND_TASK
-#endif
-
-//==============================================================================
-// juce_graphics flags:
-
-#ifndef    JUCE_USE_COREIMAGE_LOADER
- //#define JUCE_USE_COREIMAGE_LOADER
-#endif
-
-#ifndef    JUCE_USE_DIRECTWRITE
- //#define JUCE_USE_DIRECTWRITE
 #endif

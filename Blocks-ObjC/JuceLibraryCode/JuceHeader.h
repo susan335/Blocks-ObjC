@@ -19,7 +19,6 @@
 #include <juce_blocks_basics/juce_blocks_basics.h>
 #include <juce_core/juce_core.h>
 #include <juce_events/juce_events.h>
-#include <juce_graphics/juce_graphics.h>
 
 
 #if ! DONT_SET_USING_JUCE_NAMESPACE
